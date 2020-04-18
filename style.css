@@ -1,15 +1,21 @@
 :root {
   --very-dark-blue: hsl(234, 12%, 34%);
+  --greyish-blue: hsl(229, 6%, 66%);
   --very-light-grey: hsl(0, 0%, 98%);
 }
 
 body {
   background-color: var(--very-light-grey);
   font-family: "Poppins", sans-serif;
+}
+
+h2,
+h3 {
   color: var(--very-dark-blue);
 }
 
 h1 {
+  color: var(--greyish-blue);
   font-size: 2rem;
   font-weight: lighter;
 }
