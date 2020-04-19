@@ -103,6 +103,7 @@ ul.card-container {
   /* hidden by default */
   opacity: 0;
   transition: opacity 300ms;
+  z-index: -1;
 }
 
 .card:hover::before {
