@@ -164,7 +164,6 @@ ul.card-container {
 
 .card > header:active::before {
   transform: scaleY(1.2);
-  /* transform-origin: center; */
 }
 
 .card a:focus {
