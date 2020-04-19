@@ -92,7 +92,8 @@ ul.card-container {
   transition: transform 300ms;
 }
 
-.card:hover {
+.card:hover,
+.card:focus-within {
   transform: translateY(-10px) scale(1.05);
 }
 
@@ -112,7 +113,8 @@ ul.card-container {
   z-index: -1;
 }
 
-.card:hover::before {
+.card:hover::before,
+.card:focus-within::before {
   opacity: 1;
 }
 
@@ -155,8 +157,18 @@ ul.card-container {
   transition: transform 300ms;
 }
 
-.card > header:hover::before {
+.card > header:hover::before,
+.card > header:focus-within::before {
   transform: scaleX(1);
+}
+
+.card > header:active::before {
+  transform: scaleY(1.2);
+  /* transform-origin: center; */
+}
+
+.card a:focus {
+  outline: none;
 }
 
 .card p {
